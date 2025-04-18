@@ -1,0 +1,5 @@
+node_modules
+.git
+.pnpm-store
+src
+tsconfig.json

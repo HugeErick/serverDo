@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Optional: if you're using pm2
+.pids/
+*.pid
+
+# Optional: if using coverage tools like nyc or jest
+coverage/
+
+# Optional: if using Prisma
+prisma/migrations/
+
