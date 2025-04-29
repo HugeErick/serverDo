@@ -1,19 +1,23 @@
 {
-  "name": "www",
+  "name": "serverDo",
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
+  "type": "commonjs",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"ts-node\" src/server.ts"
+    "start": "node --env-file=.env dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.10.0",
   "dependencies": {
-    "express": "^5.1.0"
+    "@types/pg": "^8.11.14",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.15.6"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "Commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
     "esModuleInterop": true,                                 
@@ -10,6 +10,9 @@
     "skipLibCheck": true                                  
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

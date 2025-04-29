@@ -1,12 +1,10 @@
-# fly.toml app configuration file generated for serverdo-cold-sunset-556 on 2025-04-18T12:46:19-06:00
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
 app = 'serverdo-cold-sunset-556'
 primary_region = 'qro'
 
 [build]
+
+[env]
+  DATABASE_URL = "postgresql://troncodur0:85t1ZqMqZWYu1zx6vP1wWA@ericks-portafolio-10350.6wr.aws-us-west-2.cockroachlabs.cloud:26257/sample?sslmode=verify-full"
 
 [http_service]
   internal_port = 3000
