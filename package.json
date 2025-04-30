@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node --env-file=.env dist/server.js",
-    "dev": "ts-node src/server.ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
     "build": "tsc"
   },
   "keywords": [],
